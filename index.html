@@ -1,0 +1,54 @@
+
+<!doctype html>
+<html lang="en" data-framework="es6">
+	<head>
+		<meta charset="utf-8">
+		<title>Vanilla ES6 • TodoMVC</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<section class="todoapp">
+			<header class="header">
+				<h1>todos</h1>
+				<input class="new-todo" placeholder="What needs to be done?" autofocus>
+			</header>
+
+			<section class="main">
+				<input id="toggle-all" class="toggle-all" type="checkbox">
+				<label for="toggle-all">Mark all as complete</label>
+
+				<ul class="todo-list">
+          <li class="todo-item completed">
+            <input id="todo-1" class="toggle" type="checkbox" checked>
+            <label for="todo-1">HTML</label>
+            <button class="destroy"></button>
+          </li>
+
+          <li class="todo-item">
+            <input id="todo-2" class="toggle" type="checkbox">
+            <label for="todo-2">CSS</label>
+            <button class="destroy"></button>
+          </li>
+        </ul>
+
+				<footer class="footer">
+					<span class="todo-count">1 item left</span>
+					<ul class="filters">
+						<li>
+							<a href="#/" class="selected">All</a>
+						</li>
+						<li>
+						<a href="#/active">Active</a>
+						</li>
+						<li>
+						<a href="#/completed">Completed</a>
+						</li>
+					</ul>
+					<button class="clear-completed">Clear completed</button>
+				</footer>
+			</section>
+		</section>
+		<script src="script.js"></script>
+		<link rel="stylesheet" href="node_modules/todomvc-common/base.css">
+	</body>
+</html>
